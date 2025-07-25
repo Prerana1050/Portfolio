@@ -1,3 +1,4 @@
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Header */
 header {
   background: #1e2a38;
   color: white;
@@ -26,10 +28,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -50,6 +53,7 @@ nav ul li a:hover {
   color: #00bfa6;
 }
 
+/* Sections */
 section {
   padding: 4rem 2rem;
   max-width: 1100px;
@@ -63,6 +67,14 @@ h2 {
   text-align: center;
 }
 
+/* About Section */
+#about p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Projects */
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -70,7 +82,7 @@ h2 {
 }
 
 .project-card {
-  background: #ffffff;
+  background: white;
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -87,6 +99,17 @@ h2 {
   color: #1e2a38;
 }
 
+.project-card p {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.project-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
 .project-card a {
   text-decoration: none;
   color: #00bfa6;
@@ -97,6 +120,18 @@ h2 {
   color: #00796b;
 }
 
+/* Contact */
+#contact a {
+  color: #00bfa6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -104,4 +139,18 @@ footer {
   margin-top: 3rem;
   font-size: 0.95rem;
   color: #555;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
