@@ -74,14 +74,6 @@ h2 {
   line-height: 1.8;
 }
 
-.about-card {
-  width: 400px;
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
-}
-
 /* Projects */
 .project-list {
   display: grid;
@@ -137,13 +129,6 @@ h2 {
 
 #contact a:hover {
   text-decoration: underline;
-}
-.contact-card {
-  width: 400px;
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
 }
 
 /* Footer */
