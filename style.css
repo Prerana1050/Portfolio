@@ -57,7 +57,6 @@ nav ul li a:hover {
   width: 17ch; /* width depends on your sentence length */
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #008080; /* Teal cursor */
   font-size: 2rem;
   animation: typing 2.5s steps(17), blink 0.7s step-end infinite;
 }
@@ -70,11 +69,6 @@ nav ul li a:hover {
     width: 17ch;
   }
 }
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
 }
 
 /* Sections */
