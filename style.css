@@ -52,6 +52,30 @@ nav ul li a {
 nav ul li a:hover {
   color: #00bfa6;
 }
+/*h1*/
+.typing {
+  width: 17ch; /* width depends on your sentence length */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #008080; /* Teal cursor */
+  font-size: 2rem;
+  animation: typing 2.5s steps(17), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 /* Sections */
 section {
